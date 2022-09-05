@@ -1,11 +1,12 @@
 <template>
   <div class="header-wrapper">
       <div class="header-content-wrapper">
-          adwa
-          <Button type="primary">Primary</Button>
-          <Button type="success">Success</Button>
-            <Button type="warning">Warning</Button>
-            <Button type="error">Error</Button>
+          <div class="logo-box">logo</div>
+          <div class="navigate-box">nav</div>
+          <div class="search-box">search</div>
+          <div class="more-box">
+            <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" :size="40"/>
+          </div>
       </div>
   </div>
 </template>
@@ -36,9 +37,18 @@ export default {
         @include font-color("normal-font-color");
         @include font-size("normal-font-size");
         .header-content-wrapper{
+            @include background-color("header-background-color");
             max-width: 1500px;
+            // min-width: 1500px;
             height: 100%;
             margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            .more-box {
+                position: absolute;
+                right: 0;
+            }
         }
     }
 </style>
