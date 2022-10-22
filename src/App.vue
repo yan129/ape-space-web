@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  created(){
+    // 设置主题
+    window.document.documentElement.setAttribute( "data-theme", "dark" );
+  }
 }
 </script>
 
@@ -20,5 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+  min-width: 1400px;
+  max-width: 1600px;
 }
 </style>

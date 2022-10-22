@@ -12,7 +12,7 @@ $themes: (
         
         // 头部导航栏背景颜色
         header-background-color: #fff,
-    
+        avatar-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5),
     ),
     
     dark: (
@@ -21,8 +21,8 @@ $themes: (
         normal-font-color: #fff,
         
         // 头部导航栏背景颜色
-        header-background-color: #282d30,
-    
+        header-background-color: #1E1E1E,
+        avatar-shadow: 0 0 12px 0 rgba(255, 255, 255, 0.5),
     )
 );
 

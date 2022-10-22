@@ -46,3 +46,10 @@
         border-color: themed($color) !important;
     }
 }
+
+//获取阴影
+@mixin box-shadow($size) {
+    @include themeify {
+        box-shadow: themed($size) !important;
+    }
+}
